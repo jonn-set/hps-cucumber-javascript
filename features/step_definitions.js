@@ -53,7 +53,7 @@ module.exports = function () {
         callback();
     });
 
-    this.Given(/^I take "(.*)" coffees$/, function (coffee_number, callback) {
+    this.When(/^I take "(.*)" coffees$/, function (coffee_number, callback) {
         this.actionwords.iTakeCoffeeNumberCoffees(coffee_number);
         callback();
     });
@@ -107,4 +107,4 @@ module.exports = function () {
         this.actionwords.settingsShouldBe(__datatable);
         callback();
     });
-}
+};
